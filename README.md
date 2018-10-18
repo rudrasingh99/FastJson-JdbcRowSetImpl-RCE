@@ -1,5 +1,4 @@
 # FastJson-JdbcRowSetImpl
-### JNDI加载RMI方式，附漏洞环境 &amp; 利用Exp。
 
 ## 环境构建
 
@@ -81,3 +80,7 @@ String[] commands = {"touch","/opt/test"}; //Command
 ```
 ![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/6.jpg?raw=true)
 
+# 致谢我的好基友
+
+### pyn3rd https://github.com/pyn3rd/CVE-2018-2893
+### 背影   https://github.com/yanweijin
