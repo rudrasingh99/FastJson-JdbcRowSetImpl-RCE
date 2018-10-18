@@ -1,5 +1,9 @@
 # FastJson-JdbcRowSetImpl
 
+## 初心
+
+### 在前不久的护网杯中出现了名为“easy_web”的一道题，利用FastJson的JdbcRowSetImpl类反序列化漏洞进行Shell。一大部分人对这道题是懵逼的，没做出来的，因为没有环境去练习，所以我就写了环境，方便大家练习。
+
 ## 漏洞环境构建
 
 ```
