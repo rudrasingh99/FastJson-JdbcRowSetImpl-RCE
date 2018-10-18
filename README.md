@@ -8,34 +8,6 @@
 
 ```
 root@Bearcat:/# wget "https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/master/FastJson_Vul.war" -P /opt/apache-tomcat-8.5.24/webapps/ && cd /opt/apache-tomcat-8.5.24/bin/ && ./startup.sh
-
---2018-10-19 03:56:31--  https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/master/FastJson_Vul.war
-Resolving github.com (github.com)... 192.30.253.112, 192.30.253.113
-Connecting to github.com (github.com)|192.30.253.112|:443... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://github.com/iBearcat/FastJson-JdbcRowSetImpl-RCE/raw/master/FastJson_Vul.war [following]
---2018-10-19 03:56:34--  https://github.com/iBearcat/FastJson-JdbcRowSetImpl-RCE/raw/master/FastJson_Vul.war
-Reusing existing connection to github.com:443.
-HTTP request sent, awaiting response... 302 Found
-Location: https://raw.githubusercontent.com/iBearcat/FastJson-JdbcRowSetImpl-RCE/master/FastJson_Vul.war [following]
---2018-10-19 03:56:36--  https://raw.githubusercontent.com/iBearcat/FastJson-JdbcRowSetImpl-RCE/master/FastJson_Vul.war
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.24.133
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.24.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 1124826 (1.1M) [application/octet-stream]
-Saving to: ‘/opt/apache-tomcat-8.5.24/webapps/FastJson_Vul.war’
-
-FastJson_Vul.war                          100%[==================================================================================>]   1.07M   116KB/s    in 9.2s
-
-2018-10-19 03:56:46 (119 KB/s) - ‘/opt/apache-tomcat-8.5.24/webapps/FastJson_Vul.war’ saved [1124826/1124826]
-
-Using CATALINA_BASE:   /opt/apache-tomcat-8.5.24
-Using CATALINA_HOME:   /opt/apache-tomcat-8.5.24
-Using CATALINA_TMPDIR: /opt/apache-tomcat-8.5.24/temp
-Using JRE_HOME:        //opt/jdk1.8.0_131/jre
-Using CLASSPATH:       /opt/apache-tomcat-8.5.24/bin/bootstrap.jar:/opt/apache-tomcat-8.5.24/bin/tomcat-juli.jar
-Tomcat started.
-root@Bearcat:/opt/apache-tomcat-8.5.24/bin#
 ```
 
 ![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/1.jpg?raw=true)
