@@ -1,6 +1,6 @@
 # FastJson-JdbcRowSetImpl
 
-## 环境构建
+## 漏洞环境构建
 
 ```
 root@Bearcat:/# wget "https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/master/FastJson_Vul.war" -P path.... & cd  ${path}/opt/apache-tomcat-8.5.24/bin & ./startup.sh"
