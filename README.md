@@ -9,7 +9,6 @@
 ```
 root@Bearcat:/# wget "https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/master/FastJson_Vul.war" -P /opt/apache-tomcat-8.5.24/webapps/ && cd /opt/apache-tomcat-8.5.24/bin/ && ./startup.sh
 
-
 --2018-10-19 03:56:31--  https://github.com/iBearcat/FastJson-JdbcRowSetImpl/raw/master/FastJson_Vul.war
 Resolving github.com (github.com)... 192.30.253.112, 192.30.253.113
 Connecting to github.com (github.com)|192.30.253.112|:443... connected.
