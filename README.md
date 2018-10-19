@@ -86,5 +86,5 @@ String[] commands = {"touch","/opt/test"}; //Command
 
 # 致谢我的好基友
 
-### pyn3rd https://github.com/pyn3rd/CVE-2018-2893
+### pyn3rd https://github.com/pyn3rd
 ### 背影   https://github.com/yanweijin
